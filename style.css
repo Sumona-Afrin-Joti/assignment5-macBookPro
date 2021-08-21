@@ -29,6 +29,10 @@ h2{
 h5 ,h3{
     font-weight: bold;
 }
+h6{
+    color: red;
+    display: none;
+}
 p{
     font-weight: bold;
 }

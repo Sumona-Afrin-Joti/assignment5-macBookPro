@@ -87,10 +87,11 @@
                             <p class="col-6">$<span id = "total">1299</span></p>
                         </div>
 
-                        <div class="mt-5">
+                        <div id= "promo-part" class="mt-5">
                             <h5>Add Promo Code</h5>
                             <input type="text" name="" id="input">
-                            <button onclick = "updateBonusTotal()" id = "apply" class="btn btn-danger">Apply</button>
+                            <button onclick = "updateBonusTotal(event)" id = "apply" class="btn btn-danger">Apply</button>
+                            <h6 id = "alert">invalid code, try again.</h6>
                         </div>
                     </article>
             </div>

@@ -13,7 +13,6 @@ function updateMemoryCost(argument) {
     getCost()
 }
 
-
 function updateExtraStorageCost(argument) {
     const extraStorageCost = document.getElementById('extra-storage-cost');
     
@@ -55,11 +54,15 @@ function getCost() {
 
 function updateBonusTotal() {
     const input = document.getElementById('input');
-    const bonusTotalValue = parseFloat(bonusTotal.innerText);
-    if (input.value.toLowerCase() == 'stevekaku') {
-        const totalAfterUsingCode = bonusTotalValue - (bonusTotalValue * .2);
-        console.log(totalAfterUsingCode);
+    const totalValue = parseFloat(total.innerText);
+    if (input.value == 'stevekaku') {
+        const totalAfterUsingCode = totalValue - (totalValue * .2);
         bonusTotal.innerText = totalAfterUsingCode;
+        document.getElementById('alert').style.display = "none";
+    }
+    else {
+        document.getElementById('alert').style.display = "block";
     }
     input.value = '';
+    
 }
