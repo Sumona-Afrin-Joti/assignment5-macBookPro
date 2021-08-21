@@ -37,26 +37,26 @@
                     <article class="mt-5">
                         <h5>Memory</h5>
                         <div>
-                            <button onclick =  "updateMemoryCost('8GB')" id = "8GB-memory" class="btn btn-outline-secondary       button ">8GB unified memory</button>
-                            <button onclick =  "updateMemoryCost('16GB')" id = "16GB-memory" class="btn btn-outline-secondary      button ">16GB unified memory</button>
+                            <button onclick =  "updateCost('extra-memory-cost',0,false)" id = "8GB-memory" class="btn btn-outline-secondary       button ">8GB unified memory</button>
+                            <button onclick =  "updateCost('extra-memory-cost',180,true)" id = "16GB-memory" class="btn btn-outline-secondary      button ">16GB unified memory</button>
                         </div>
                     </article>
 
                     <article class="mt-5">
                         <h5>Storage</h5>
-                        <button onclick = "updateExtraStorageCost('storage1')" id = "storage1-button" class="btn btn-outline-secondary     button ">256GB SSD storage</button>
-                        <button onclick = "updateExtraStorageCost('storage2')" id = "storage2-button" class="btn btn-outline-secondary    button ">512GB SSD storage</button>
-                        <button onclick = "updateExtraStorageCost('storage3')" id = "storage3-button" class="btn btn-outline-secondary   button ">1TB SSD storage</button>
+                        <button onclick = "updateCost('extra-storage-cost',0,false)" id = "storage1-button" class="btn btn-outline-secondary     button ">256GB SSD storage</button>
+                        <button onclick = "updateCost('extra-storage-cost',100,true)" id = "storage2-button" class="btn btn-outline-secondary    button ">512GB SSD storage</button>
+                        <button onclick = "updateCost('extra-storage-cost',180,true)" id = "storage3-button" class="btn btn-outline-secondary   button ">1TB SSD storage</button>
                     </article>
 
                     <article class="mt-5">
                         <h5>Choose your delivery option</h5>
 
-                        <button onclick = "updateDeliveryCost('delivery-button-1')" class="btn btn-outline-secondary  button ">
+                        <button onclick = "updateCost('delivery-charge-cost',0,false)" class="btn btn-outline-secondary  button ">
                             Friday, Aug 25 FREE Prime Delivery
                         </button>
 
-                        <button onclick = "updateDeliveryCost('delivery-button-2')" class="btn btn-outline-secondary button ">
+                        <button onclick = "updateCost('delivery-charge-cost',20,true)" class="btn btn-outline-secondary button ">
                             Friday, Aug 21 Delivery charge $20
                         </button>
                     </article>
@@ -64,7 +64,7 @@
                     <article class="mt-5">
                         <div class="row">
                             <h5 class="col-6">Best Price</h5>
-                            <p class="col-6">$ <span>1299</span></p>
+                            <p class="col-6">$ <span id = "best-cost">1299</span></p>
                         </div>
                         <hr>
                         <div class="row">
